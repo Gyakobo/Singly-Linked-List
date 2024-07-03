@@ -28,6 +28,6 @@ The first node in the list is called a head, and the last node in the list has a
 
 ## Methodology
 
-
-
+## License
+MIT
 
