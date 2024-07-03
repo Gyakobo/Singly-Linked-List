@@ -15,6 +15,11 @@ Author: [Andrew Gyakobo](https://github.com/Gyakobo)
 $ sudo gcc -ansi -Wpedantic -Wextra -Wall main.c -o exe
 ```
 
-# Introduction
+This project showcases and more importantly explains a simple example of Singly Linked List.
+
+## Introduction
+
+Singly 
+
 
 
