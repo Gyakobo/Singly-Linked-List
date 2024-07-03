@@ -26,5 +26,8 @@ A Singly Linked List is a linear data structure where each element, called a nod
 
 The first node in the list is called a head, and the last node in the list has a reference to `null`, indicating the end of the list.
 
-##
+## Methodology
+
+
+
 
