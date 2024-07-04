@@ -195,6 +195,24 @@ def search(self, key):
        return False
 ```
 
+## Space Complexity 
+
+The space complexity for a singly linked list is $O(n)$ because each node requires space for the data and the reference to the next node.
+
+### Advantages of Singly Linked Lists
+
+1. *Dynamic Size*: They can easily grow and shrink in size by allocating and deallocating memory as needed.
+
+1. *Efficient Insertions/Deletions*: Insertions and deletions (especially at the beginning) are more efficient compared to arrays since no shifting of elements is required.
+
+### Disadvantages of Singly Linked Lists
+
+1. *No Direct Access*: Accessing an element by index requires traversal from the head, which can be time-consuming.
+
+1. *Memory Overhead*: Additional memory is required for storing the reference to the next node for each element.
+
+1. *Poor Cache Performance*: Due to non-contiguous memory allocation, linked lists may suffer from poor cache performance compared to arrays.
+
 ## License
 MIT
 
