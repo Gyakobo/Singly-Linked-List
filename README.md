@@ -141,13 +141,59 @@ def insert_at_end(self, data):
         * Time complexity: $O(n)$
 
 ```c
+int SLL_pop(struct List * list){
+    struct Node * p;
+    int item;
 
+    if (!SLL_empty(list)) {
+        p = list->head;
+        item = p->item;
+
+        list->head = p->next; 
+        free(p);
+        return item;
+    }
+
+    return -1; /* Gotto change */
+}
 ```
 
 ```python
+def delete_node(self, key):
+       temp = self.head
 
+       if temp is not None:
+           if temp.data == key:
+               self.head = temp.next
+               temp = None
+               return
+
+       while temp is not None:
+           if temp.data == key:
+               break
+           prev = temp
+           temp = temp.next
+
+       if temp == None:
+           return
+
+       prev.next = temp.next
+       temp = None
 ```
 
+3. **Search**
+    * Searching for an element involves traversing the list and comparing each node's data with the target value.
+        * Time Complexity: $O(n)$
+
+```python
+def search(self, key):
+       current = self.head
+       while current:
+           if current.data == key:
+               return True
+           current = current.next
+       return False
+```
 
 ## License
 MIT
