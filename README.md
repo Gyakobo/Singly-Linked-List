@@ -28,7 +28,26 @@ The first node in the list is called a head, and the last node in the list has a
 
 ## Methodology
 
-Needless to say, each link in this singly linked list is going to be represented by a node
+Needless to say, each link in this singly linked list is going to be represented by a node:
+
+C code
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int item;
+    struct Node * next;
+};
+```
+
+Python
+```python
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+```
 
 Before we delve into the code let's first understand the basic operations. 
 
