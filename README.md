@@ -79,6 +79,7 @@ Before we delve into the code let's first understand the basic operations.
 
         * Time Complexity: $O(n)$ in the worst case.
 
+C code
 ```c
 void SLL_push(struct List * list, int item) {
     struct Node * p = malloc(sizeof(struct Node));
@@ -107,6 +108,7 @@ void SLL_append(struct List * list, int item) {
 }
 ```
 
+Python
 ```python    
 def insert_at_beginning(self, data):
         new_node = Node(data)
@@ -123,6 +125,29 @@ def insert_at_end(self, data):
         last_node = last_node.next
     last_node.next = new_node
 ```
+
+2. **Deletion**
+
+    * *At the beginning(head)*: This operation involves updating the head pointer to the next node.
+        
+        * Time complexity: $O(1)$
+    
+    * *At the end*: This operation requires traversal to the second last node to update its reference to `null`.
+
+        * Time complexity: $O(n)$
+
+    * *At a specific position*: This operation involves traversal to the node just before the one to be deleted and updating its reference.
+        
+        * Time complexity: $O(n)$
+
+```c
+
+```
+
+```python
+
+```
+
 
 ## License
 MIT
