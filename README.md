@@ -19,7 +19,7 @@ This project showcases and more importantly explains a simple example of Singly 
 
 ## Introduction
 
-A Singly Linked List is a linear data structure where each element, called a node, contains two parts:
+**A Singly Linked List** is a linear data structure where each element, called a node, contains two parts:
 
 1. Data: The value stored in the node
 1. Pointer (or Reference): A reference to then next node in the sequence
@@ -79,8 +79,49 @@ Before we delve into the code let's first understand the basic operations.
 
         * Time Complexity: $O(n)$ in the worst case.
 
-```python    
+```c
+void SLL_push(struct List * list, int item) {
+    struct Node * p = malloc(sizeof(struct Node));
+    p->item = item;
 
+    if (SLL_empty(list)) {
+        list->head = p;        
+        list->tail = p;        
+    }
+
+    else {
+        p->next     = list->head;
+        list->head  = p; 
+    }
+}
+
+void SLL_append(struct List * list, int item) {
+    struct Node * p = malloc(sizeof(struct Node));
+    p->item = item;
+
+    if (SLL_empty(list)) SLL_push(list, item);
+    else {
+        list->tail->next = p;
+        list->tail = p;
+    }
+}
+```
+
+```python    
+def insert_at_beginning(self, data):
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+
+def insert_at_end(self, data):
+    new_node = Node(data)
+    if not self.head:
+        self.head = new_node
+        return
+    last_node = self.head
+    while last_node.next:
+        last_node = last_node.next
+    last_node.next = new_node
 ```
 
 ## License
