@@ -28,6 +28,28 @@ The first node in the list is called a head, and the last node in the list has a
 
 ## Methodology
 
+Needless to say, each link in this singly linked list is going to be represented by a node
+
+Before we delve into the code let's first understand the basic operations. 
+
+1. **Insertion**
+
+    * *At the beginning (head)*: This operation involves creating a new node and updating the head pointer to this new node.
+
+        * Time Complexity: $O(1)$
+    
+    * *At the end*: This operation requires traversal to the end of the list to add the new node.
+
+        * Time Complexity: $O(n)$, where n is the number of nodes in the list. 
+
+    * *At a specific position*: This operation involves traversing to the desired position and inserting the new node.
+
+        * Time Complexity: $O(n)$ in the worst case.
+
+```python    
+
+```
+
 ## License
 MIT
 
