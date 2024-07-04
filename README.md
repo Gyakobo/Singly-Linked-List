@@ -28,6 +28,8 @@ The first node in the list is called a head, and the last node in the list has a
 
 ## Methodology
 
+As of the current I wrote 2 programs for you, my dear explorer, to test. One in [python](https://github.com/Gyakobo/Singly-Linked-List/blob/main/main.py) and the other in the [C programming language](https://github.com/Gyakobo/Singly-Linked-List/blob/main/main.c)
+
 Needless to say, each link in this singly linked list is going to be represented by a node, followed by the `class SinglyLinkedList` or `struct List` implementation:
 
 C code
