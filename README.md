@@ -140,6 +140,7 @@ def insert_at_end(self, data):
         
         * Time complexity: $O(n)$
 
+C code
 ```c
 int SLL_pop(struct List * list){
     struct Node * p;
@@ -158,6 +159,7 @@ int SLL_pop(struct List * list){
 }
 ```
 
+Python
 ```python
 def delete_node(self, key):
        temp = self.head
@@ -185,6 +187,7 @@ def delete_node(self, key):
     * Searching for an element involves traversing the list and comparing each node's data with the target value.
         * Time Complexity: $O(n)$
 
+Python
 ```python
 def search(self, key):
        current = self.head
