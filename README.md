@@ -9,7 +9,7 @@
 Author: [Andrew Gyakobo](https://github.com/Gyakobo)
 
 >[!NOTE]
->Just a small personal note and a small gag per say, this program is written in clean C and has no errors or warnings. The program was run and precompiled into an `.exe` with the following bash command:
+>Just a small personal note and a small gag per say; this program is written in clean C and has no errors or warnings. The program was run and precompiled into an `.exe` with the following bash command:
 
 ```bash
 $ sudo gcc -ansi -Wpedantic -Wextra -Wall main.c -o exe
